@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coworking Maspalomas | LifeCowork Gran Canaria</title>
+  <meta name="description" content="Le coworking de référence à Maspalomas. 5.0 ★ · 89 avis Google · Accès 24/7 · Fibre 1Go · Pour freelances, nomades digitaux et entrepreneurs à Gran Canaria.">
+  <meta name="keywords" content="coworking maspalomas, coworking gran canaria, nomades digitaux gran canaria, travail à distance maspalomas, coworking îles canaries">
+  <meta property="og:title" content="LifeCowork · Votre Espace de Travail · Maspalomas">
+  <meta property="og:description" content="5.0 ★ · 89 avis. Coworking premium dans le sud de Gran Canaria. Accès 24/7.">
+  <meta property="og:url" content="https://lifecowork.es/fr/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://lifecowork.es/fr/">
+  <link rel="alternate" hreflang="es" href="https://lifecowork.es/">
+  <link rel="alternate" hreflang="en" href="https://lifecowork.es/en/">
+  <link rel="alternate" hreflang="de" href="https://lifecowork.es/de/">
+  <link rel="alternate" hreflang="fr" href="https://lifecowork.es/fr/">
+  <link rel="alternate" hreflang="nl" href="https://lifecowork.es/nl/">
+  <link rel="alternate" hreflang="x-default" href="https://lifecowork.es/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ── RESET ─────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── TOKENS ────────────────────────────── */
+    :root {
+      --black:     #111111;
+      --black-d:   #0A0A0A;
+      --gold:      #C9A64A;
+      --gold-lt:   #E8C97A;
+      --gold-bg:   #FBF6EC;
+      --white:     #FFFFFF;
+      --off:       #F8F7F5;
+      --text:      #111111;
+      --muted:     #777777;
+      --border:    #E8E4DC;
+      --sh-sm:     0 2px 12px rgba(0,0,0,.07);
+      --sh-md:     0 8px 32px rgba(0,0,0,.12);
+      --sh-lg:     0 24px 64px rgba(0,0,0,.16);
+      --r:         12px;
+      --r-lg:      20px;
+      --r-xl:      32px;
+      --max:       1160px;
+      --nav:       72px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a   { text-decoration: none; color: inherit; }
+
+    /* ── UTILS ─────────────────────────────── */
+    .wrap   { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+    .sec    { padding: 96px 0; }
+    .sec-sm { padding: 64px 0; }
+    .center { text-align: center; }
+
+    .tag {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11px; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--gold);
+      border: 1px solid var(--gold); padding: 5px 14px;
+      border-radius: 100px;
+    }
+    .tag-light {
+      color: var(--gold-lt); border-color: rgba(201,166,74,.4);
+    }
+
+    .h-xl {
+      font-size: clamp(38px, 5.5vw, 72px);
+      font-weight: 900; line-height: 1.04;
+      letter-spacing: -.03em;
+    }
+    .h-lg {
+      font-size: clamp(28px, 4vw, 48px);
+      font-weight: 800; line-height: 1.1;
+      letter-spacing: -.025em;
+    }
+    .h-md {
+      font-size: clamp(18px, 2vw, 24px);
+      font-weight: 700; line-height: 1.25;
+    }
+    .gold { color: var(--gold); }
+
+    /* ── BUTTONS ───────────────────────────── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; border-radius: 100px;
+      font-size: 15px; font-weight: 600; font-family: inherit;
+      cursor: pointer; border: none;
+      transition: all .22s ease; white-space: nowrap;
+    }
+    .btn-gold {
+      background: var(--gold); color: var(--black);
+    }
+    .btn-gold:hover {
+      background: var(--gold-lt);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(201,166,74,.35);
+    }
+    .btn-white {
+      background: var(--white); color: var(--black);
+    }
+    .btn-white:hover {
+      background: var(--off);
+      transform: translateY(-1px);
+    }
+    .btn-outline-gold {
+      background: transparent; color: var(--gold);
+      border: 2px solid var(--gold);
+    }
+    .btn-outline-gold:hover {
+      background: rgba(201,166,74,.08);
+      transform: translateY(-1px);
+    }
+    .btn-outline-white {
+      background: transparent; color: var(--white);
+      border: 2px solid rgba(255,255,255,.5);
+    }
+    .btn-outline-white:hover {
+      border-color: var(--white);
+      background: rgba(255,255,255,.08);
+      transform: translateY(-1px);
+    }
+    .btn-lg  { padding: 18px 36px; font-size: 16px; }
+    .btn-w   { width: 100%; justify-content: center; }
+
+    /* ── NAV ───────────────────────────────── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      height: var(--nav); z-index: 100;
+      background: transparent;
+      transition: all .35s ease;
+    }
+    nav.on {
+      background: var(--black-d);
+      box-shadow: 0 1px 0 rgba(201,166,74,.15);
+    }
+    .nav-in {
+      max-width: var(--max); margin: 0 auto; padding: 0 24px;
+      height: 100%; display: flex; align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex; align-items: center;
+      color: var(--white);
+    }
+    .logo img {
+      height: 52px;
+      width: auto;
+      filter: invert(1) brightness(2);
+      transition: opacity .2s;
+    }
+    .logo img:hover { opacity: .85; }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a {
+      font-size: 13px; font-weight: 500;
+      color: rgba(255,255,255,.65); transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta { display: flex; gap: 10px; }
+    @media (max-width: 820px) { .nav-links { display: none; } }
+
+    /* ── HERO ──────────────────────────────── */
+    .hero {
+      min-height: 100vh; position: relative;
+      display: flex; align-items: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: var(--black-d);
+    }
+    .hero-bg img {
+      width: 100%; height: 100%; object-fit: cover;
+      opacity: .45;
+    }
+    /* Gradiente para legibilidad del texto */
+    .hero-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        105deg,
+        rgba(10,10,10,.85) 0%,
+        rgba(10,10,10,.55) 55%,
+        rgba(10,10,10,.3) 100%
+      );
+    }
+    .hero-content {
+      position: relative; z-index: 1;
+      max-width: var(--max); margin: 0 auto; padding: 0 24px;
+      padding-top: var(--nav);
+    }
+    .hero-eyebrow {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 28px;
+    }
+    .hero-line { width: 48px; height: 2px; background: var(--gold); }
+    .hero-eyebrow span {
+      font-size: 12px; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--gold);
+    }
+    .hero-title { color: var(--white); margin-bottom: 12px; }
+    .hero-sub-title {
+      font-size: clamp(16px, 2.5vw, 22px);
+      color: var(--gold); font-weight: 600;
+      letter-spacing: .06em; text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .hero-desc {
+      font-size: 18px; color: rgba(255,255,255,.7);
+      max-width: 520px; line-height: 1.75; margin-bottom: 40px;
+    }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 64px; }
+    .hero-stats {
+      display: flex; gap: 48px; flex-wrap: wrap;
+      padding-top: 40px;
+      border-top: 1px solid rgba(201,166,74,.25);
+    }
+    .stat-val {
+      font-size: 28px; font-weight: 900; color: var(--gold);
+      letter-spacing: -.02em; line-height: 1;
+    }
+    .stat-lbl {
+      font-size: 12px; color: rgba(255,255,255,.5);
+      font-weight: 500; margin-top: 5px; letter-spacing: .02em;
+    }
+    /* Scroll hint */
+    .scroll-hint {
+      position: absolute; bottom: 32px; left: 50%;
+      transform: translateX(-50%); z-index: 1;
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      color: rgba(255,255,255,.35); font-size: 11px;
+      letter-spacing: .08em; text-transform: uppercase;
+      animation: bounce 2s infinite;
+    }
+    .scroll-hint::after {
+      content: '↓'; font-size: 18px; color: var(--gold);
+    }
+    @keyframes bounce {
+      0%,100% { transform: translateX(-50%) translateY(0); }
+      50%      { transform: translateX(-50%) translateY(6px); }
+    }
+
+    /* ── PROOF BAR ─────────────────────────── */
+    .proof {
+      background: var(--black);
+      border-top: 1px solid rgba(201,166,74,.2);
+      border-bottom: 1px solid rgba(201,166,74,.2);
+      padding: 20px 0;
+    }
+    .proof-in {
+      max-width: var(--max); margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: center;
+      gap: 40px; flex-wrap: wrap;
+    }
+    .pi {
+      display: flex; align-items: center; gap: 8px;
+      color: rgba(255,255,255,.55); font-size: 13px; font-weight: 500;
+    }
+    .pi strong { color: var(--gold); }
+    .pi-sep { color: rgba(201,166,74,.3); font-size: 18px; }
+
+    /* ── AUDIENCE ──────────────────────────── */
+    .aud-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 2px; margin-top: 56px;
+      border: 2px solid var(--border); border-radius: var(--r-lg);
+      overflow: hidden;
+    }
+    .aud-card {
+      padding: 40px 32px; background: var(--white);
+      border-right: 2px solid var(--border);
+      transition: background .25s;
+      position: relative; overflow: hidden;
+    }
+    .aud-card:last-child { border-right: none; }
+    .aud-card::before {
+      content: ''; position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+      background: var(--gold);
+      transform: scaleX(0); transform-origin: left;
+      transition: transform .3s ease;
+    }
+    .aud-card:hover { background: var(--off); }
+    .aud-card:hover::before { transform: scaleX(1); }
+    .aud-num {
+      font-size: 48px; font-weight: 900; color: var(--border);
+      line-height: 1; margin-bottom: 20px;
+      transition: color .25s;
+    }
+    .aud-card:hover .aud-num { color: var(--gold); }
+    .aud-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 10px; }
+    .aud-card p  { font-size: 14px; color: var(--muted); line-height: 1.7; }
+    @media (max-width: 720px) {
+      .aud-grid { grid-template-columns: 1fr; }
+      .aud-card { border-right: none; border-bottom: 2px solid var(--border); }
+      .aud-card:last-child { border-bottom: none; }
+    }
+
+    /* ── GALLERY ───────────────────────────── */
+    .gallery {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      grid-template-rows: 280px 280px;
+      gap: 12px; margin-top: 56px;
+    }
+    .gal-item { border-radius: var(--r); overflow: hidden; position: relative; }
+    .gal-item:first-child { grid-row: span 2; }
+    .gal-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .5s ease;
+    }
+    .gal-item:hover img { transform: scale(1.05); }
+    @media (max-width: 720px) {
+      .gallery { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+      .gal-item:first-child { grid-row: span 1; }
+    }
+
+    /* ── DIFFERENTIATOR (surf section) ─────── */
+    .diff {
+      background: var(--black);
+      position: relative; overflow: hidden;
+    }
+    .diff::before {
+      content: '';
+      position: absolute; top: -1px; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .diff::after {
+      content: '';
+      position: absolute; bottom: -1px; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .diff-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 64px; align-items: center;
+    }
+    .diff-img-wrap { position: relative; }
+    .diff-img {
+      width: 100%; border-radius: var(--r-xl);
+      object-fit: cover; aspect-ratio: 4/3;
+    }
+    .diff-tag-float {
+      position: absolute; top: 24px; left: 24px;
+      background: var(--gold); color: var(--black);
+      font-size: 11px; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; padding: 6px 14px;
+      border-radius: 100px;
+    }
+    .diff-title { color: var(--white); margin-bottom: 20px; }
+    .diff-desc  { color: rgba(255,255,255,.6); font-size: 16px; line-height: 1.75; margin-bottom: 36px; }
+    .diff-list  { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+    .diff-list li {
+      display: flex; align-items: flex-start; gap: 14px;
+      color: rgba(255,255,255,.75); font-size: 15px; line-height: 1.5;
+    }
+    .diff-list li::before {
+      content: '—'; color: var(--gold); font-weight: 700;
+      flex-shrink: 0; margin-top: 1px;
+    }
+    @media (max-width: 760px) {
+      .diff-grid { grid-template-columns: 1fr; gap: 40px; }
+    }
+
+    /* ── AMENITIES ─────────────────────────── */
+    .am-grid {
+      display: grid; grid-template-columns: repeat(4,1fr);
+      gap: 16px; margin-top: 56px;
+    }
+    .am-card {
+      background: var(--white); border-radius: var(--r);
+      padding: 28px 22px; text-align: center;
+      border: 1px solid var(--border);
+      transition: all .25s;
+    }
+    .am-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-3px);
+      box-shadow: var(--sh-sm);
+    }
+    .am-ico  { font-size: 28px; margin-bottom: 12px; }
+    .am-card h4 { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+    .am-card p  { font-size: 13px; color: var(--muted); }
+    @media (max-width: 900px) { .am-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 480px) { .am-grid { grid-template-columns: 1fr; } }
+
+    /* ── PRICING ───────────────────────────── */
+    .price-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 24px; margin-top: 56px; align-items: start;
+    }
+    .price-card {
+      border-radius: var(--r-lg); padding: 36px 28px;
+      border: 1px solid var(--border); background: var(--white);
+      position: relative; transition: all .25s;
+    }
+    .price-card:hover { box-shadow: var(--sh-md); transform: translateY(-2px); }
+    .price-card.hot {
+      background: var(--black); color: var(--white);
+      border-color: var(--gold);
+      box-shadow: 0 0 0 1px var(--gold), var(--sh-lg);
+      transform: scale(1.03);
+    }
+    .price-card.hot:hover { transform: scale(1.03) translateY(-2px); }
+    .hot-pill {
+      position: absolute; top: -15px; left: 50%; transform: translateX(-50%);
+      background: var(--gold); color: var(--black);
+      font-size: 11px; font-weight: 800; padding: 4px 16px;
+      border-radius: 100px; letter-spacing: .07em; text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .price-name   { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; opacity: .5; }
+    .price-amount { font-size: 56px; font-weight: 900; letter-spacing: -.04em; line-height: 1; margin: 14px 0 4px; }
+    .price-amount sup { font-size: 24px; vertical-align: super; font-weight: 700; }
+    .price-period { font-size: 13px; opacity: .5; margin-bottom: 28px; }
+    .price-feats  { list-style: none; margin-bottom: 28px; }
+    .price-feats li {
+      padding: 9px 0; font-size: 14px;
+      display: flex; align-items: center; gap: 10px;
+      border-bottom: 1px solid rgba(0,0,0,.07);
+    }
+    .price-card.hot .price-feats li { border-color: rgba(255,255,255,.08); }
+    .price-feats li::before { content: '✓'; font-weight: 800; color: var(--gold); }
+    @media (max-width: 760px) {
+      .price-grid { grid-template-columns: 1fr; }
+      .price-card.hot { transform: none; }
+      .price-card.hot:hover { transform: translateY(-2px); }
+    }
+
+    /* ── ROOMS ─────────────────────────────── */
+    .room-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 24px; margin-top: 56px;
+    }
+    .room-card {
+      border-radius: var(--r-lg); overflow: hidden;
+      border: 1px solid var(--border);
+      transition: all .25s;
+    }
+    .room-card:hover { border-color: var(--gold); box-shadow: var(--sh-md); }
+    .room-img { height: 240px; overflow: hidden; position: relative; }
+    .room-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+    .room-card:hover .room-img img { transform: scale(1.05); }
+    .room-cap {
+      position: absolute; top: 16px; right: 16px;
+      background: var(--black); color: var(--gold);
+      font-size: 11px; font-weight: 700; letter-spacing: .06em;
+      text-transform: uppercase; padding: 5px 12px;
+      border-radius: 100px; border: 1px solid rgba(201,166,74,.4);
+    }
+    .room-body { padding: 28px; }
+    .room-body h3 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+    .room-price { font-size: 30px; font-weight: 900; color: var(--gold); margin-bottom: 18px; letter-spacing: -.02em; }
+    .room-price span { font-size: 15px; font-weight: 400; color: var(--muted); }
+    .room-feats { list-style: none; }
+    .room-feats li { font-size: 14px; color: var(--muted); padding: 5px 0; display: flex; gap: 10px; align-items: center; }
+    .room-feats li::before { content: '·'; color: var(--gold); font-size: 22px; line-height: 0.7; }
+    @media (max-width: 620px) { .room-grid { grid-template-columns: 1fr; } }
+
+    /* ── FAQ ───────────────────────────────── */
+    .faq-list { max-width: 720px; margin: 56px auto 0; }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-q {
+      width: 100%; background: none; border: none;
+      padding: 22px 0; text-align: left;
+      font-size: 16px; font-weight: 600; font-family: inherit; color: var(--text);
+      cursor: pointer; display: flex; justify-content: space-between;
+      align-items: center; gap: 16px; transition: color .2s;
+    }
+    .faq-q:hover { color: var(--gold); }
+    .faq-ico {
+      font-size: 20px; color: var(--gold);
+      transition: transform .3s; flex-shrink: 0;
+      font-weight: 300; line-height: 1;
+    }
+    .faq-item.open .faq-ico { transform: rotate(45deg); }
+    .faq-a {
+      max-height: 0; overflow: hidden;
+      transition: max-height .35s ease, padding .35s ease;
+    }
+    .faq-item.open .faq-a { max-height: 320px; padding-bottom: 20px; }
+    .faq-a p { font-size: 15px; color: var(--muted); line-height: 1.75; }
+
+    /* ── FOUNDER ───────────────────────────── */
+    .founder-in {
+      display: grid; grid-template-columns: 1fr 1fr;
+      align-items: center; gap: 80px;
+    }
+    .founder-quote {
+      font-size: clamp(22px, 3vw, 34px); font-weight: 800;
+      font-style: italic; line-height: 1.3; color: var(--white);
+      margin-bottom: 20px;
+    }
+    .founder-quote::before { content: '"'; color: var(--gold); }
+    .founder-quote::after  { content: '"'; color: var(--gold); }
+    .founder-body { font-size: 16px; color: rgba(255,255,255,.6); line-height: 1.8; margin-bottom: 32px; }
+    .founder-name { font-size: 15px; font-weight: 700; color: var(--white); }
+    .founder-role { font-size: 13px; color: var(--gold); margin-top: 3px; letter-spacing: .03em; }
+    .founder-img-wrap { position: relative; }
+    .founder-img {
+      width: 100%; border-radius: var(--r-xl);
+      object-fit: cover; aspect-ratio: 4/5;
+      border: 1px solid rgba(201,166,74,.25);
+    }
+    .founder-img-badge {
+      position: absolute; bottom: -20px; right: -20px;
+      width: 90px; height: 90px; border-radius: 50%;
+      background: var(--gold);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      box-shadow: var(--sh-md);
+    }
+    .founder-img-badge span:first-child { font-size: 22px; font-weight: 900; color: var(--black); line-height: 1; }
+    .founder-img-badge span:last-child  { font-size: 10px; font-weight: 700; color: var(--black); letter-spacing: .04em; }
+    @media (max-width: 760px) {
+      .founder-in { grid-template-columns: 1fr; gap: 48px; }
+      .founder-img-badge { right: 0; bottom: -16px; width: 76px; height: 76px; }
+    }
+
+    /* ── REVIEWS ───────────────────────────── */
+    .rev-head {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      flex-wrap: wrap; gap: 32px; margin-bottom: 56px;
+    }
+    .rev-score { display: flex; align-items: center; gap: 20px; }
+    .rev-num   { font-size: 72px; font-weight: 900; color: var(--black); line-height: 1; letter-spacing: -.04em; }
+    .rev-stars { font-size: 24px; letter-spacing: 4px; }
+    .rev-count { font-size: 13px; color: var(--muted); margin-top: 4px; }
+    .rev-grid  { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    .rev-card  {
+      background: var(--off); border-radius: var(--r);
+      padding: 28px; border: 1px solid var(--border);
+      transition: all .25s;
+    }
+    .rev-card:hover { border-color: var(--gold); box-shadow: var(--sh-sm); }
+    .rev-s    { font-size: 14px; letter-spacing: 3px; margin-bottom: 14px; }
+    .rev-txt  { font-size: 14px; color: var(--text); line-height: 1.75; margin-bottom: 20px; font-style: italic; }
+    .rev-au   { display: flex; align-items: center; gap: 12px; }
+    .rev-av   {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: var(--black); color: var(--gold);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; font-weight: 800; flex-shrink: 0;
+    }
+    .rev-nm   { font-size: 14px; font-weight: 700; }
+    .rev-dt   { font-size: 12px; color: var(--muted); margin-top: 2px; }
+    @media (max-width: 720px) { .rev-grid { grid-template-columns: 1fr; } }
+
+    /* ── CONTACT ───────────────────────────── */
+    .ct-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+    .ct-list { display: flex; flex-direction: column; gap: 22px; }
+    .ct-item { display: flex; align-items: flex-start; gap: 16px; }
+    .ct-ico  {
+      width: 46px; height: 46px; border-radius: 12px;
+      background: var(--black); color: var(--gold);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; flex-shrink: 0;
+      border: 1px solid rgba(201,166,74,.2);
+    }
+    .ct-item strong { display: block; font-size: 14px; font-weight: 700; }
+    .ct-item span   { font-size: 13px; color: var(--muted); margin-top: 2px; display: block; }
+    .map-wrap { border-radius: var(--r-lg); overflow: hidden; height: 380px; }
+    .map-wrap iframe { width: 100%; height: 100%; border: none; }
+    @media (max-width: 720px) { .ct-grid { grid-template-columns: 1fr; } }
+
+    /* ── FOOTER ────────────────────────────── */
+    footer {
+      background: var(--black-d);
+      border-top: 1px solid rgba(201,166,74,.15);
+      padding: 56px 0 32px;
+    }
+    .ft-top {
+      display: flex; justify-content: space-between;
+      align-items: flex-start; flex-wrap: wrap; gap: 40px;
+      margin-bottom: 48px; padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+    .ft-brand p { font-size: 13px; color: rgba(255,255,255,.4); margin-top: 12px; max-width: 220px; line-height: 1.6; }
+    .ft-col h5  { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+    .ft-col ul  { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .ft-col ul a { font-size: 14px; color: rgba(255,255,255,.5); transition: color .2s; }
+    .ft-col ul a:hover { color: var(--gold); }
+    .ft-social { display: flex; gap: 10px; margin-top: 16px; }
+    .ft-social a {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.1);
+      color: rgba(255,255,255,.6);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; transition: all .2s;
+    }
+    .ft-social a:hover {
+      background: rgba(201,166,74,.15);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+    .ft-copy { text-align: center; font-size: 12px; color: rgba(255,255,255,.25); }
+
+    /* ── WA FLOAT ──────────────────────────── */
+    .wa {
+      position: fixed; bottom: 28px; right: 28px; z-index: 99;
+      width: 58px; height: 58px; border-radius: 50%;
+      background: #25D366; color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,.4);
+      font-size: 26px; transition: transform .2s, box-shadow .2s;
+    }
+    .wa:hover { transform: scale(1.1); box-shadow: 0 8px 28px rgba(37,211,102,.5); }
+
+    /* ── LANG SWITCHER ────────────────────── */
+    .lang-switcher {
+      display: flex; align-items: center; gap: 3px; margin-right: 10px;
+    }
+    .lang-btn {
+      background: none; border: 1px solid transparent;
+      border-radius: 6px; padding: 4px 8px;
+      font-size: 12px; font-weight: 700; letter-spacing: .05em;
+      color: rgba(255,255,255,.4); cursor: pointer;
+      transition: all .2s; font-family: inherit;
+    }
+    .lang-btn:hover { color: var(--gold); border-color: rgba(201,166,74,.3); }
+    .lang-btn.active { color: var(--gold); border-color: var(--gold); }
+    @media (max-width: 820px) { .lang-switcher { display: none; } }
+
+    /* ── ANIMATIONS ────────────────────────── */
+    .fu {
+      opacity: 0; transform: translateY(24px);
+      transition: opacity .65s ease, transform .65s ease;
+    }
+    .fu.vis { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════════════════════ -->
+<nav id="nav">
+  <div class="nav-in">
+    <a href="#" class="logo">
+      <img src="../img/logo.jpg" alt="LifeCowork · Your Work Space">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#espacio">L'espace</a></li>
+      <li><a href="#tarifas">Tarifs</a></li>
+      <li><a href="#salas">Salles</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contacto">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <div class="lang-switcher">
+        <button class="lang-btn" onclick="location.href='../'" id="lb-es">ES</button>
+        <button class="lang-btn" onclick="location.href='../en/'" id="lb-en">EN</button>
+        <button class="lang-btn" onclick="location.href='../de/'" id="lb-de">DE</button>
+        <button class="lang-btn active" id="lb-fr">FR</button>
+        <button class="lang-btn" onclick="location.href='../nl/'" id="lb-nl">NL</button>
+      </div>
+      <a href="https://wa.me/34615073305?text=Bonjour!%20Je%20souhaite%20réserver%20chez%20LifeCowork." class="btn btn-gold" style="padding:10px 22px;font-size:13px;" target="_blank">Réserver →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HERO ══════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="../img/hero.jpg"
+         alt="LifeCowork Maspalomas workspace">
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow fu">
+      <div class="hero-line"></div>
+      <span>Maspalomas · Gran Canaria</span>
+    </div>
+    <div class="hero-sub-title fu" style="transition-delay:.08s">Your Work Space</div>
+    <h1 class="h-xl hero-title fu" style="transition-delay:.14s">
+      Trabaja donde<br>otros <span class="gold">vacacionan.</span>
+    </h1>
+    <p class="hero-desc fu" style="transition-delay:.2s">
+      Le coworking de référence dans le sud de Gran Canaria pour freelances, nomades digitaux et entrepreneurs qui choisissent de travailler sérieusement — et de vivre mieux. Accès sur réservation préalable.
+    </p>
+    <div class="hero-btns fu" style="transition-delay:.26s">
+      <a href="https://wa.me/34615073305?text=Hi!%20I%27d%20like%20to%20book%20at%20LifeCowork." class="btn btn-gold btn-lg" target="_blank">Réserver via WhatsApp →</a>
+      <a href="#espacio" class="btn btn-outline-white btn-lg">Voir l'espace</a>
+    </div>
+    <div class="hero-stats fu" style="transition-delay:.32s">
+      <div>
+        <div class="stat-val">5.0 ★</div>
+        <div class="stat-lbl">89 avis Google et plus</div>
+      </div>
+      <div>
+        <div class="stat-val">24 / 7</div>
+        <div class="stat-lbl">Accès 365 jours sur réservation</div>
+      </div>
+      <div>
+        <div class="stat-val">1 Gb</div>
+        <div class="stat-lbl">Fibre symétrique</div>
+      </div>
+      <div>
+        <div class="stat-val">10'</div>
+        <div class="stat-lbl">De Playa del Inglés</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- ══ PROOF BAR ═════════════════════════════════════════════ -->
+<div class="proof">
+  <div class="proof-in">
+    <div class="pi">📍 Maspalomas, Gran Canaria</div>
+    <div class="pi-sep">·</div>
+    <div class="pi">⚡ Fibre symétrique <strong>1Go</strong></div>
+    <div class="pi-sep">·</div>
+    <div class="pi">🔑 <strong>24/7</strong> Accès · 365 jours</div>
+    <div class="pi-sep">·</div>
+    <div class="pi">☕ Café & thé inclus</div>
+    <div class="pi-sep">·</div>
+    <div class="pi">🖥️ Écran secondaire</div>
+    <div class="pi-sep">·</div>
+    <div class="pi">🖨️ Imprimante · Scanner</div>
+  </div>
+</div>
+
+<!-- ══ PARA QUIÉN ════════════════════════════════════════════ -->
+<section class="sec" style="background:var(--white)" id="espacio">
+  <div class="wrap">
+    <div class="center fu">
+      <div class="tag">Pour qui</div>
+      <h2 class="h-lg" style="margin-top:18px">Vous vous reconnaissez ?</h2>
+      <p style="color:var(--muted);font-size:17px;margin-top:14px;max-width:500px;margin-left:auto;margin-right:auto">
+        LifeCowork n'est pas pour tout le monde.<br>C'est pour ceux qui savent ce qu'ils veulent.
+      </p>
+    </div>
+    <div class="aud-grid">
+      <div class="aud-card fu">
+        <div class="aud-num">01</div>
+        <h3>Vous travaillez à distance</h3>
+        <p>Votre entreprise ou vos clients sont dans un autre pays. Vous avez besoin de concentration, d'une connexion fiable et d'un environnement vraiment professionnel.</p>
+      </div>
+      <div class="aud-card fu" style="transition-delay:.1s">
+        <div class="aud-num">02</div>
+        <h3>Vous êtes nomade digital</h3>
+        <p>Vous êtes à Gran Canaria pour des jours, des semaines ou des mois. Vous cherchez un espace pour produire et rencontrer des personnes intéressantes tout en profitant de l'île.</p>
+      </div>
+      <div class="aud-card fu" style="transition-delay:.2s">
+        <div class="aud-num">03</div>
+        <h3>Freelance ou entrepreneur</h3>
+        <p>Vous avez votre propre projet. Travailler seul chez vous vous freine. Ici vous trouverez l'énergie, l'environnement et la communauté qui vous font avancer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ GALERÍA ═══════════════════════════════════════════════ -->
+<section class="sec" style="background:var(--off)">
+  <div class="wrap">
+    <div class="center fu">
+      <div class="tag">L'espace</div>
+      <h2 class="h-lg" style="margin-top:18px">Conçu pour la performance</h2>
+    </div>
+    <div class="gallery">
+      <div class="gal-item fu">
+        <img src="../img/workspace1.jpg" alt="LifeCowork workspace Maspalomas">
+      </div>
+      <div class="gal-item fu" style="transition-delay:.08s">
+        <img src="../img/workspace3.jpg" alt="Trabajando en LifeCowork Gran Canaria">
+      </div>
+      <div class="gal-item fu" style="transition-delay:.12s">
+        <img src="../img/workspace4.jpg" alt="Escritorio coworking Maspalomas">
+      </div>
+      <div class="gal-item fu" style="transition-delay:.16s">
+        <img src="../img/chill.jpg" alt="Zona de trabajo LifeCowork">
+      </div>
+      <div class="gal-item fu" style="transition-delay:.20s">
+        <img src="../img/chill2.jpg" alt="Ambiente LifeCowork coworking">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DIFERENCIADOR (surf) ══════════════════════════════════ -->
+<section class="sec diff">
+  <div class="wrap">
+    <div class="diff-grid">
+      <div class="diff-img-wrap fu">
+        <img class="diff-img"
+          src="../img/workspace2.jpg"
+          alt="LifeCowork — trabajo y lifestyle en Gran Canaria">
+        <div class="diff-tag-float">Gran Canaria Lifestyle</div>
+      </div>
+      <div class="fu" style="transition-delay:.2s">
+        <div class="tag tag-light">Ce qui nous rend uniques</div>
+        <h2 class="h-lg diff-title" style="margin-top:20px">
+          Ici les planches de surf<br>et les laptops<br><span class="gold">cohabitent.</span>
+        </h2>
+        <p class="diff-desc">
+          Nous ne sommes pas un bureau avec des chaises ergonomiques et des néons. Nous sommes l'espace où les personnes qui ont choisi de travailler depuis Gran Canaria trouvent leur place.
+        </p>
+        <ul class="diff-list">
+          <li>Zone chill avec canapés pour décompresser entre les sessions</li>
+          <li>Atmosphère informelle mais productive — ton naturel, sans tension</li>
+          <li>Vraie communauté de professionnels qui partagent votre style de vie</li>
+          <li>10 minutes de Playa del Inglés — le travail s'arrête et l'île commence</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ AMENITIES ═════════════════════════════════════════════ -->
+<section class="sec" style="background:var(--off)">
+  <div class="wrap">
+    <div class="center fu">
+      <div class="tag">Inclus</div>
+      <h2 class="h-lg" style="margin-top:18px">Tout ce dont vous avez besoin. Déjà inclus.</h2>
+    </div>
+    <div class="am-grid">
+      <div class="am-card fu"><div class="am-ico">⚡</div><h4>Fibre 1Go Symétrique</h4><p>Visioconférences, cloud, VPN. Aucune coupure.</p></div>
+      <div class="am-card fu" style="transition-delay:.05s"><div class="am-ico">🔑</div><h4>Accès 24/7</h4><p>365 jours par an, quand vous en avez besoin.</p></div>
+      <div class="am-card fu" style="transition-delay:.08s"><div class="am-ico">🖥️</div><h4>Écran secondaire</h4><p>Available on request. +€3/day.</p></div>
+      <div class="am-card fu" style="transition-delay:.11s"><div class="am-ico">☕</div><h4>Café & thé</h4><p>Un café ou thé par jour inclus dans tous les forfaits.</p></div>
+      <div class="am-card fu" style="transition-delay:.14s"><div class="am-ico">🖨️</div><h4>Imprimante & scanner</h4><p>Disponible pour tous les coworkers.</p></div>
+      <div class="am-card fu" style="transition-delay:.17s"><div class="am-ico">🧊</div><h4>Réfrigérateur & micro-ondes</h4><p>Apportez votre nourriture et réchauffez-la ici.</p></div>
+      <div class="am-card fu" style="transition-delay:.20s"><div class="am-ico">🪑</div><h4>Mobilier ergonomique</h4><p>Chaises et bureaux conçus pour de longues journées de travail.</p></div>
+      <div class="am-card fu" style="transition-delay:.23s"><div class="am-ico">🛋️</div><h4>Zone chill</h4><p>Canapés et espace pour décompresser quand vous en avez besoin.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PRICING ════════════════════════════════════════════════ -->
+<section class="sec" id="tarifas" style="background:var(--white)">
+  <div class="wrap">
+    <div class="center fu">
+      <div class="tag">Tarifs</div>
+      <h2 class="h-lg" style="margin-top:18px">Choisissez comment vous travaillez</h2>
+      <p style="color:var(--muted);font-size:17px;margin-top:14px">Pas de frais cachés. Pas d'engagement.</p>
+    </div>
+    <div class="price-grid">
+
+      <div class="price-card fu">
+        <div class="price-name">Day Pass</div>
+        <div class="price-amount"><sup>€</sup>20</div>
+        <div class="price-period">par jour · Lun–Dim · 24h sur réservation</div>
+        <ul class="price-feats">
+          <li>Poste de travail complet</li>
+          <li>Fibre symétrique 1Go</li>
+          <li>Café ou thé inclus</li>
+          <li>Eau, réfrigérateur & micro-ondes</li>
+          <li>Écran +3€ selon disponibilité</li>
+        </ul>
+        <a href="https://wa.me/34615073305?text=Hi!%20I%27d%20like%20to%20book%20a%20Day%20Pass%20at%20LifeCowork." class="btn btn-outline-gold btn-w" target="_blank">Réserver une journée</a>
+      </div>
+
+      <div class="price-card hot fu" style="transition-delay:.1s">
+        <div class="hot-pill">Le plus populaire</div>
+        <div class="price-name" style="opacity:.4">Week Pass</div>
+        <div class="price-amount"><sup>€</sup>90</div>
+        <div class="price-period" style="opacity:.4">par semaine Lun–Ven · (Lun–Dim 100€)</div>
+        <ul class="price-feats">
+          <li>Tout du Day Pass</li>
+          <li>Écran +10€/sem Lun–Ven</li>
+          <li>Écran +15€/sem Lun–Dim</li>
+          <li>Idéal pour les nomades digitaux</li>
+        </ul>
+        <a href="https://wa.me/34615073305?text=Hi!%20I%27d%20like%20to%20book%20a%20Week%20Pass%20at%20LifeCowork." class="btn btn-gold btn-lg btn-w" target="_blank">Réserver une semaine</a>
+        <p style="font-size:12px;color:rgba(255,255,255,.35);text-align:center;margin-top:14px">Vous pensez à une semaine ou un mois et voulez d'abord voir ? <a href="https://wa.me/34615073305" style="color:var(--gold)" target="_blank">Écrivez-nous.</a></p>
+      </div>
+
+      <div class="price-card fu" style="transition-delay:.2s">
+        <div class="price-name">Mensuel</div>
+        <div class="price-amount"><sup>€</sup>200</div>
+        <div class="price-period">par mois Lun–Ven · (Lun–Dim 250€/mois)</div>
+        <ul class="price-feats">
+          <li>Tout ce qui précède inclus</li>
+          <li>Écran +30€/mois</li>
+          <li>Votre place dédiée chaque jour</li>
+          <li>Communauté & networking</li>
+          <li>Idéal pour les freelances locaux</li>
+        </ul>
+        <a href="https://wa.me/34615073305?text=Hi!%20I%27d%20like%20to%20get%20the%20Monthly%20plan%20at%20LifeCowork." class="btn btn-outline-gold btn-w" target="_blank">S'abonner au mensuel</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ SALAS ══════════════════════════════════════════════════ -->
+<section class="sec" id="salas" style="background:var(--off)">
+  <div class="wrap">
+    <div class="center fu">
+      <div class="tag">Salles de réunion</div>
+      <h2 class="h-lg" style="margin-top:18px">Espace privé quand vous en avez besoin</h2>
+      <p style="color:var(--muted);font-size:17px;margin-top:14px">Équipées pour présentations, visioconférences et travail en équipe.</p>
+    </div>
+    <div class="room-grid">
+      <div class="room-card fu">
+        <div class="room-img">
+          <img src="../img/sala6.jpg" alt="Meeting room 6 people Maspalomas">
+          <div class="room-cap">Jusqu'à 6 personnes</div>
+        </div>
+        <div class="room-body">
+          <h3>Compact Room</h3>
+          <div class="room-price">€30 <span>/hour</span></div>
+          <ul class="room-feats">
+            <li>Écran tactile interactif 65″</li>
+            <li>Panneau tactile & pointeur laser</li>
+            <li>Café ou thé inclus</li>
+            <li>Lun–Ven · Horaires de bureau</li>
+          </ul>
+          <a href="https://wa.me/34615073305?text=Hi!%20I%27d%20like%20to%20book%20the%20Compact%20Room%20(6%20people)%20at%20LifeCowork." class="btn btn-outline-gold btn-w" style="margin-top:20px" target="_blank">Réserver la salle</a>
+        </div>
+      </div>
+      <div class="room-card fu" style="transition-delay:.15s">
+        <div class="room-img">
+          <img src="../img/sala12.png" alt="Meeting room 12 people Gran Canaria">
+          <div class="room-cap">Jusqu'à 12 personnes</div>
+        </div>
+        <div class="room-body">
+          <h3>Large Room</h3>
+          <div class="room-price">€60 <span>/hour</span></div>
+          <ul class="room-feats">
+            <li>Écran 65″ avec connexion HDMI</li>
+            <li>Accès indépendant & privé</li>
+            <li>Café ou thé inclus</li>
+            <li>Lun–Ven · Horaires de bureau</li>
+          </ul>
+          <a href="https://wa.me/34615073305?text=Hi!%20I%27d%20like%20to%20book%20the%20Large%20Room%20(12%20people)%20at%20LifeCowork." class="btn btn-outline-gold btn-w" style="margin-top:20px" target="_blank">Réserver la salle</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ════════════════════════════════════════════════════ -->
+<section class="sec" id="faq" style="background:var(--white)">
+  <div class="wrap">
+    <div class="center fu">
+      <div class="tag">FAQ</div>
+      <h2 class="h-lg" style="margin-top:18px">Réponses à vos questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item fu">
+        <button class="faq-q" onclick="faq(this)"><span>Puis-je passer des appels et des visios ?</span> <span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Oui, c'est courant. L'espace fonctionne avec un ton naturel et respectueux — cela se passe organiquement car tout le monde travaille sérieusement. Si vous avez besoin d'une totale intimité pour un appel important, des salles de réunion sont disponibles.</p></div>
+      </div>
+      <div class="faq-item fu">
+        <button class="faq-q" onclick="faq(this)"><span>Comment fonctionne l'accès et les horaires ?</span> <span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>LifeCowork se trouve dans le <strong>Centre d'Affaires Eurocenter</strong> (C.C. Eurocenter), Maspalomas.</p><p style="margin-top:10px"><strong>Horaires d'accès :</strong><br>Lun–Ven 06h00–18h00 : toutes les entrées ouvertes.<br>Lun–Ven 18h00–21h00 et Sam 06h00–14h00 : entrée principale (entre la laverie et la Cafetería Las Caracolas).<br>En dehors de ces horaires : contactez le gardien — réservation confirmée et payée obligatoire.</p><p style="margin-top:10px"><strong>Une fois votre réservation confirmée</strong>, vous recevrez les instructions d'accès. Vous pouvez entrer et sortir pendant votre Day Pass ou Week Pass. Le gardien vous assistera quand vous en avez besoin.</p></div>
+      </div>
+      <div class="faq-item fu">
+        <button class="faq-q" onclick="faq(this)"><span>Internet est-il vraiment fiable pour travailler ?</span> <span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Fibre symétrique 1Go. Sans limite de données, sans coupures. Parfait pour les visioconférences, l'accès cloud, VPN et le travail à distance intensif. C'est l'un des aspects les plus appréciés dans nos avis.</p></div>
+      </div>
+      <div class="faq-item fu">
+        <button class="faq-q" onclick="faq(this)"><span>Y a-t-il un engagement minimum ?</span> <span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Non. Vous pouvez venir une journée, une semaine ou opter pour un abonnement mensuel. Sans engagement à long terme. La flexibilité fait partie du service.</p></div>
+      </div>
+      <div class="faq-item fu">
+        <button class="faq-q" onclick="faq(this)"><span>Puis-je visiter avant de réserver ?</span> <span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Oui, mais contactez-nous d'abord par WhatsApp. Nous confirmons si quelqu'un est à l'intérieur ou organisons une visite avec vous. Il n'y a pas toujours de personnel sur place — c'est notre philosophie d'accès flexible.</p></div>
+      </div>
+      <div class="faq-item fu">
+        <button class="faq-q" onclick="faq(this)"><span>Où êtes-vous exactement ?</span> <span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>À Maspalomas, à 10 minutes à pied de Playa del Inglés, dans le sud de Gran Canaria. Quartier calme, stationnement facile et moins de 30 minutes de l'aéroport.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOUNDER ════════════════════════════════════════════════ -->
+<section class="sec" style="background:var(--black)">
+  <div class="wrap">
+    <div class="founder-in">
+      <div class="fu">
+        <div class="tag tag-light">Le fondateur</div>
+        <p class="founder-quote" style="margin-top:24px">
+          J'ai créé LifeCowork parce que j'avais moi-même besoin d'un endroit comme ça à Maspalomas — et il n'existait tout simplement pas.
+        </p>
+        <p class="founder-body">
+          Je suis entrepreneur digital — je construis des entreprises depuis Gran Canaria et je travaille à distance parce que je choisis de vivre ici. J'ai créé LifeCowork pour ceux qui partagent cette façon de travailler : des personnes qui n'ont pas besoin d'un bureau fixe mais ont besoin d'un espace vraiment professionnel, avec de vraies personnes autour d'elles.
+        </p>
+        <div style="margin-bottom:32px">
+          <div class="founder-name">Yuri Bó</div>
+          <div class="founder-role">Founder · LifeCowork Maspalomas</div>
+        </div>
+        <a href="https://wa.me/34615073305" class="btn btn-gold" target="_blank">Parler à Yuri →</a>
+      </div>
+      <div class="founder-img-wrap fu" style="transition-delay:.2s">
+        <img class="founder-img"
+          src="../img/yuri.jpg"
+          alt="Yuri Bó, founder of LifeCowork Gran Canaria">
+        <div class="founder-img-badge">
+          <span>5.0</span>
+          <span>★★★★★</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ REVIEWS ════════════════════════════════════════════════ -->
+<section class="sec" style="background:var(--white)">
+  <div class="wrap">
+    <div class="rev-head fu">
+      <div>
+        <div class="tag">Vrais avis</div>
+        <h2 class="h-lg" style="margin-top:18px">Ce que disent les gens</h2>
+      </div>
+      <div class="rev-score">
+        <div class="rev-num">5.0</div>
+        <div>
+          <div class="rev-stars">⭐⭐⭐⭐⭐</div>
+          <div class="rev-count">89 avis Google vérifiés</div>
+          <a href="https://www.google.com/maps/place/Life+Cowork" target="_blank"
+             style="font-size:13px;color:var(--gold);font-weight:600;margin-top:6px;display:block">
+            Voir tous les avis →
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="rev-grid">
+      
+      <div class="rev-card fu">
+        <div class="rev-s">⭐⭐⭐⭐⭐</div>
+        <p class="rev-txt">"Exactement ce qu'il me fallait. Super ambiance, wifi ultra-rapide et emplacement parfait à Maspalomas. Sans conteste le meilleur coworking du sud de l'île."</p>
+        <div class="rev-au">
+          <div class="rev-av">A</div>
+          <div><div class="rev-nm">Alejandro M.</div><div class="rev-dt">Avis Google</div></div>
+        </div>
+      </div>
+      <div class="rev-card fu" style="transition-delay:.1s">
+        <div class="rev-s">⭐⭐⭐⭐⭐</div>
+        <p class="rev-txt">"Trois semaines ici en tant que nomade digital et c'est le meilleur coworking où j'ai travaillé aux Canaries. Yuri est excellent — très accessible."</p>
+        <div class="rev-au">
+          <div class="rev-av">S</div>
+          <div><div class="rev-nm">Sarah K.</div><div class="rev-dt">Avis Google</div></div>
+        </div>
+      </div>
+      <div class="rev-card fu" style="transition-delay:.2s">
+        <div class="rev-s">⭐⭐⭐⭐⭐</div>
+        <p class="rev-txt">"L'accès 24h fait une énorme différence. Calme, bien équipé, tout ce qu'il faut. Un espace qui donne envie de revenir chaque jour."</p>
+        <div class="rev-au">
+          <div class="rev-av">M</div>
+          <div><div class="rev-nm">Marc R.</div><div class="rev-dt">Avis Google</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACTO ═══════════════════════════════════════════════ -->
+<section class="sec" id="contacto" style="background:var(--off)">
+  <div class="wrap">
+    <div class="center fu" style="margin-bottom:56px">
+      <div class="tag">Contact</div>
+      <h2 class="h-lg" style="margin-top:18px">Vous avez une question ?</h2>
+      <p style="color:var(--muted);font-size:17px;margin-top:14px">Écrivez-nous — nous répondons le jour même.</p>
+    </div>
+    <div class="ct-grid">
+      <div class="ct-list fu">
+        <div class="ct-item">
+          <div class="ct-ico">📍</div>
+          <div>
+            <strong>Adresse</strong>
+            <span>Maspalomas, Gran Canaria<br>10 min à pied de Playa del Inglés</span>
+          </div>
+        </div>
+        <div class="ct-item">
+          <div class="ct-ico">💬</div>
+          <div>
+            <strong>WhatsApp</strong>
+            <span><a href="https://wa.me/34615073305" style="color:var(--gold);font-weight:600" target="_blank">+34 615 073 305</a></span>
+          </div>
+        </div>
+        <div class="ct-item">
+          <div class="ct-ico">📧</div>
+          <div>
+            <strong>Email</strong>
+            <!-- TODO: Confirma si este email existe -->
+            <span><a href="mailto:hola@lifecowork.es" style="color:var(--gold);font-weight:600">hola@lifecowork.es</a></span>
+          </div>
+        </div>
+        <div class="ct-item">
+          <div class="ct-ico">🕐</div>
+          <div>
+            <strong>Accès</strong>
+            <span>24 heures · 7 jours · 365 jours par an</span>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
+          <a href="https://www.instagram.com/lifecowork/" class="btn btn-outline-gold" target="_blank">📷 Instagram</a>
+          <a href="https://wa.me/34615073305" class="btn btn-gold" target="_blank">💬 WhatsApp</a>
+        </div>
+      </div>
+      <div class="fu" style="transition-delay:.2s">
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3530.4549331414014!2d-15.573778923864344!3d27.76495332294698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc3f639f958cfafd%3A0x74618e1fdfd0f063!2sLife%20Cowork!5e0!3m2!1ses!2ses!4v1773662619015!5m2!1ses!2ses"
+            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer>
+  <div class="wrap">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a href="#" class="logo">
+          <img src="../img/logo.jpg" alt="LifeCowork" style="height:44px;filter:invert(1) brightness(2);">
+        </a>
+        <p>Your Work Space.<br>Maspalomas, Gran Canaria.</p>
+      </div>
+      <div class="ft-col">
+        <h5>Espace</h5>
+        <ul>
+          <li><a href="#espacio">L'espace</a></li>
+          <li><a href="#tarifas">Tarifs</a></li>
+          <li><a href="#salas">Salles de réunion</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h5>Information</h5>
+        <ul>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contacto">Contact</a></li>
+          <li><a href="https://www.google.com/maps/place/Life+Cowork" target="_blank">Comment venir</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h5>Suivez-nous</h5>
+        <div class="ft-social">
+          <a href="https://www.instagram.com/lifecowork/" target="_blank" title="Instagram">📷</a>
+          <a href="https://wa.me/34615073305" target="_blank" title="WhatsApp">💬</a>
+          <a href="https://www.linkedin.com/company/lifecowork/" target="_blank" title="LinkedIn">💼</a>
+          <a href="https://www.facebook.com/profile.php?id=100088821861949" target="_blank" title="Facebook">📘</a>
+        </div>
+      </div>
+    </div>
+    <div class="ft-copy">
+      © 2026 LifeCowork · Maspalomas, Gran Canaria ·
+      <a href="../aviso-legal.html" style="color:rgba(255,255,255,.4);text-decoration:none;margin:0 6px;">Mentions légales</a>·
+      <a href="../privacidad.html" style="color:rgba(255,255,255,.4);text-decoration:none;margin:0 6px;">Confidentialité</a>·
+      <a href="../cookies.html" style="color:rgba(255,255,255,.4);text-decoration:none;margin:0 6px;">Cookies</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ COOKIE BANNER ══════════════════════════════════════════ -->
+<div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;border-top:1px solid rgba(201,166,74,.3);padding:16px 24px;z-index:9998;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+  <p style="font-size:13px;color:rgba(255,255,255,.7);line-height:1.5;max-width:680px;margin:0;">
+    Nous utilisons des cookies propres et tiers pour améliorer votre expérience et analyser le trafic. Vous pouvez les accepter ou les refuser.
+    <a href="../cookies.html" style="color:#C9A64A;text-decoration:none;margin-left:6px;">Politique de cookies</a>
+  </p>
+  <div style="display:flex;gap:10px;flex-shrink:0;">
+    <button onclick="cookieDecline()" style="background:none;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.6);font-family:inherit;font-size:13px;padding:8px 18px;border-radius:8px;cursor:pointer;">Refuser</button>
+    <button onclick="cookieAccept()" style="background:#C9A64A;border:none;color:#111;font-family:inherit;font-size:13px;font-weight:700;padding:8px 18px;border-radius:8px;cursor:pointer;">Accepter</button>
+  </div>
+</div>
+
+<!-- ══ WHATSAPP FLOAT ════════════════════════════════════════ -->
+<a href="https://wa.me/34615073305?text=Hola!%20Me%20gustaría%20saber%20más%20sobre%20LifeCowork."
+   class="wa" target="_blank" title="Écrivez-nous sur WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ══ SCRIPTS ════════════════════════════════════════════════ -->
+<script>
+  // Sticky nav
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('on', window.scrollY > 50);
+  }, { passive: true });
+
+  // FAQ accordion
+  function faq(btn) {
+    const item = btn.closest('.faq-item');
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!open) item.classList.add('open');
+  }
+
+  // Scroll animations
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.fu').forEach(el => io.observe(el));
+
+
+
+  // ── COOKIE BANNER ─────────────────────────────────────────────
+  function cookieAccept() {
+    localStorage.setItem('lc_cookie_ok', '1');
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+  function cookieDecline() {
+    localStorage.setItem('lc_cookie_ok', '0');
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+  if (!localStorage.getItem('lc_cookie_ok')) {
+    document.getElementById('cookie-banner').style.display = 'flex';
+  }
+</script>
+
+
+</body>
+</html>
