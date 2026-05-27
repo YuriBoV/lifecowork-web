@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instrucciones de acceso · LifeCowork</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #111111;
+      --gold:  #C9A64A;
+      --white: #FFFFFF;
+      --muted: rgba(255,255,255,.5);
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--black);
+      color: var(--white);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px 60px;
+    }
+
+    /* ── LOGO ── */
+    .logo-wrap {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    .logo-wrap img {
+      height: 72px;
+      width: 72px;
+      border-radius: 50%;
+    }
+
+    /* ── HEADER ── */
+    .tag {
+      display: inline-block;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(22px, 5vw, 32px);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    h1 span { color: var(--gold); }
+
+    .subtitle {
+      font-size: 14px;
+      color: var(--muted);
+      text-align: center;
+      margin-bottom: 36px;
+      max-width: 400px;
+      line-height: 1.6;
+    }
+
+    /* ── VIDEO ── */
+    .video-wrap {
+      width: 100%;
+      max-width: 720px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(201,166,74,.25);
+      box-shadow: 0 24px 64px rgba(0,0,0,.6);
+      margin-bottom: 36px;
+      position: relative;
+      padding-top: 56.25%; /* 16:9 */
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+
+    /* ── INFO CARDS ── */
+    .cards {
+      width: 100%;
+      max-width: 720px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .card-ico { font-size: 22px; margin-bottom: 10px; }
+    .card-title { font-size: 13px; font-weight: 600; color: var(--gold); margin-bottom: 6px; }
+    .card-text { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+    /* ── CTA ── */
+    .cta {
+      text-align: center;
+    }
+
+    .cta p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #25D366;
+      color: #fff;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 13px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+    .btn-wa:hover { opacity: .85; }
+    .btn-wa svg { flex-shrink: 0; }
+
+    /* ── FOOTER ── */
+    .foot {
+      margin-top: 48px;
+      font-size: 12px;
+      color: rgba(255,255,255,.2);
+      text-align: center;
+    }
+
+    /* ── LOCK SCREEN ── */
+    #lock {
+      position: fixed;
+      inset: 0;
+      background: var(--black);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 24px;
+      z-index: 9999;
+    }
+    #lock img {
+      height: 72px;
+      width: 72px;
+      border-radius: 50%;
+      margin-bottom: 28px;
+    }
+    #lock h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    #lock p {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 32px;
+      text-align: center;
+      max-width: 300px;
+      line-height: 1.6;
+    }
+    .lock-form {
+      width: 100%;
+      max-width: 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .lock-input {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 16px;
+      font-family: inherit;
+      color: var(--white);
+      text-align: center;
+      letter-spacing: .1em;
+      outline: none;
+      transition: border-color .2s;
+    }
+    .lock-input:focus { border-color: var(--gold); }
+    .lock-btn {
+      background: var(--gold);
+      color: var(--black);
+      border: none;
+      border-radius: 10px;
+      padding: 14px;
+      font-size: 15px;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      transition: opacity .2s;
+    }
+    .lock-btn:hover { opacity: .85; }
+    .lock-error {
+      font-size: 13px;
+      color: #ff6b6b;
+      text-align: center;
+      min-height: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══ LOCK SCREEN ══ -->
+  <div id="lock">
+    <img src="../img/logo.jpg" alt="LifeCowork">
+    <h2>Área de <span style="color:var(--gold)">coworkers</span></h2>
+    <p>Introduce el código que recibiste al confirmar tu reserva.</p>
+    <div class="lock-form">
+      <input id="pwd-input" class="lock-input" type="text" placeholder="Código de acceso" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <button class="lock-btn" onclick="checkPwd()">Acceder →</button>
+      <div class="lock-error" id="pwd-error"></div>
+    </div>
+  </div>
+
+  <div class="logo-wrap">
+    <img src="../img/logo.jpg" alt="LifeCowork">
+  </div>
+
+  <div class="tag">Bienvenido a LifeCowork</div>
+
+  <h1>Instrucciones de <span>acceso</span></h1>
+  <p class="subtitle">Ve el vídeo completo antes de tu primera visita. Tiene toda la información que necesitas para entrar sin problemas.</p>
+
+  <!-- VIDEO -->
+  <div class="video-wrap">
+    <iframe
+      src="https://www.youtube.com/embed/XFlYX2xNzrU?rel=0&modestbranding=1"
+      title="LifeCowork — Instrucciones de acceso"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- CARDS -->
+  <div class="cards">
+    <div class="card">
+      <div class="card-ico">📍</div>
+      <div class="card-title">Ubicación</div>
+      <div class="card-text">C.C. Eurocenter, Maspalomas, Gran Canaria</div>
+    </div>
+    <div class="card">
+      <div class="card-ico">🕐</div>
+      <div class="card-title">Acceso</div>
+      <div class="card-text">Con reserva confirmada · 365 días · Sigue las instrucciones del vídeo</div>
+    </div>
+    <div class="card">
+      <div class="card-ico">❓</div>
+      <div class="card-title">¿Dudas?</div>
+      <div class="card-text">Escríbenos por WhatsApp y te ayudamos al momento</div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <p>¿Alguna pregunta antes de llegar?</p>
+    <a href="https://wa.me/34615073305?text=Hola!%20Tengo%20una%20duda%20sobre%20el%20acceso%20a%20LifeCowork." class="btn-wa" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Escríbenos por WhatsApp
+    </a>
+  </div>
+
+  <div class="foot">
+    © 2026 LifeCowork · Maspalomas, Gran Canaria · lifecowork.es
+  </div>
+
+  <script>
+    // ── CÓDIGO DE ACCESO ──────────────────────────────
+    // Cámbialo cuando quieras — solo aquí, una línea
+    const ACCESS_CODE = 'LC2026';
+    // ─────────────────────────────────────────────────
+
+    function checkPwd() {
+      const val = document.getElementById('pwd-input').value.trim().toUpperCase();
+      if (val === ACCESS_CODE.toUpperCase()) {
+        document.getElementById('lock').style.display = 'none';
+        sessionStorage.setItem('lc_access', '1');
+      } else {
+        const err = document.getElementById('pwd-error');
+        err.textContent = 'Código incorrecto. Comprueba el mensaje de confirmación.';
+        document.getElementById('pwd-input').value = '';
+        document.getElementById('pwd-input').focus();
+      }
+    }
+
+    // Enter también confirma
+    document.getElementById('pwd-input').addEventListener('keydown', e => {
+      if (e.key === 'Enter') checkPwd();
+    });
+
+    // Si ya lo introdujo en esta sesión, no vuelve a pedir
+    if (sessionStorage.getItem('lc_access') === '1') {
+      document.getElementById('lock').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
